@@ -75,7 +75,7 @@ function App() {
 
   const handleSendEmail = async (employee) => {
     try {
-      const response = await fetch("https://amruthaamru.app.n8n.cloud/webhook-test/send-employee-email", {
+      const response = await fetch("https://amruthaamru.app.n8n.cloud/webhook/send-employee-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(employee),
